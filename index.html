@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Cost Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Shipping Cost Calculator</h1>
+    <div id="shipping-costs-info">
+        <h2>Shipping Costs per KG</h2>
+        <table id="shipping-costs-table">
+            <thead>
+                <tr>
+                    <th>Country</th>
+                    <th>Shipping Cost (IQD/kg)</th>
+                </tr>
+            </thead>
+            <tbody id="shipping-costs-list">
+                <!-- Shipping costs per kg data will be added here dynamically -->
+            </tbody>
+        </table>
+    </div>
+    <div id="input-form">
+        <label for="product-weight">Product Weight (kg):</label>
+        <input type="number" id="product-weight" required>
+        <label for="packaging-weight">Packaging Weight (kg):</label>
+        <input type="number" id="packaging-weight" required>
+        <button id="calculate-btn">Calculate</button>
+    </div>
+    <div id="results" style="display: none;"></div>
+    <button id="copy-all-btn" style="display: none;">Copy All</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

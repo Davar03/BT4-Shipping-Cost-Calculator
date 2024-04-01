@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#shipping-costs-info {
+    margin-bottom: 20px;
+}
+
+#shipping-costs-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#shipping-costs-list li {
+    margin-bottom: 5px;
+}
+
+#shipping-costs-list li::before {
+    content: "• ";
+    color: #007bff;
+}
+
+#input-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
